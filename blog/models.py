@@ -10,6 +10,7 @@ User = get_user_model()
 class BlogPost(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField()
+    video = models.FileField(upload_to='blog/videos/', null=True)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=True, related_name='blogs')
     created_at = models.DateTimeField(auto_now_add=True)
 

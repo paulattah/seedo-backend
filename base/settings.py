@@ -85,13 +85,15 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'pMeEEppnUEmzSIoGkvNHBPHHVHiXJKIY',
-        'HOST': 'autorack.proxy.rlwy.net',
-        'PORT': '47932'
+        'PASSWORD': 'WgLeLZtbZbeFAEeLviJgjhMOYUWhsPBi',
+        'HOST': 'junction.proxy.rlwy.net',
+        'PORT': '19981'
     }
 }
 
 AUTH_USER_MODEL='users.User'
+
+ALLOWED_HOSTS = ['*', 'http://localhost:3000']
 
 
 CORS_ALLOW_ALL_ORIGINS=True
